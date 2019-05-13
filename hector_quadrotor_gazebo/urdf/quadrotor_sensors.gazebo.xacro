@@ -6,7 +6,7 @@
   <xacro:macro name="quadrotor_sensors">
         <gazebo>
           <plugin name="quadrotor_imu_sim" filename="libhector_gazebo_ros_imu.so">
-            <updateRate>100.0</updateRate>
+            <updateRate>200.0</updateRate>
             <bodyName>base_link</bodyName>
             <frameId>$(arg base_link_frame)</frameId>
             <topicName>raw_imu</topicName>
